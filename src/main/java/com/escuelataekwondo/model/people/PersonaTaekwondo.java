@@ -1,4 +1,4 @@
-package com.escuelataekwondo.model;
+package com.escuelataekwondo.model.people;
 
 public class PersonaTaekwondo extends Persona {
 	private int id;

@@ -1,5 +1,7 @@
 package com.escuelataekwondo.model;
 
+import com.escuelataekwondo.model.people.Persona;
+
 public class EscuelaTaekwondo {
 
 	private int id;

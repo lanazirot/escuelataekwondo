@@ -1,4 +1,4 @@
-package com.escuelataekwondo.model;
+package com.escuelataekwondo.model.people;
 
 public final class AlumnoTaekwondo extends PersonaTaekwondo {
 
