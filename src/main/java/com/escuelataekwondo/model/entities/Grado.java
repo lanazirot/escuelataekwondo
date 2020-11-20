@@ -22,6 +22,9 @@ public class Grado {
 		return descripcion;
 	}
 	
+	public int getIdGrado() {
+		return idGrado;
+	}
 	
 	public Grados getGrado() {
 		return grado;
