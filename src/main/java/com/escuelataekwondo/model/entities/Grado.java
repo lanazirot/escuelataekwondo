@@ -4,17 +4,18 @@ import com.escuelataekwondo.model.enumerables.Grados;
 
 public class Grado {
 	
-	
+	private int idGrado;
 	private Grados grado;
 	private String descripcion;
 	
-	public Grado(Grados grado, String descripcion) {
+	public Grado(int idGrado, Grados grado, String descripcion) {
+		this.idGrado=idGrado;
 		this.grado=grado;
 		this.descripcion=descripcion;
 	}
 	
-	public Grado(Grados grado) {
-		this(grado, "Sin descripcion");
+	public Grado(int idGrado, Grados grado) {
+		this(idGrado, grado, "Sin descripcion");
 	}
 	
 	public String getDescripcion() {
