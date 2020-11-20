@@ -1,6 +1,4 @@
-package com.escuelataekwondo.model;
-
-import com.escuelataekwondo.model.people.Persona;
+package com.escuelataekwondo.model.entities;
 
 public class EscuelaTaekwondo {
 

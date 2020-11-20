@@ -13,7 +13,6 @@ import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-
 public final class AzureHelperConnection {
 	private Connection connection = null;
 	private AzureHelperConnection instance = null;
@@ -23,7 +22,7 @@ public final class AzureHelperConnection {
 		Properties props = new Properties();
 		try {
 			props.load(AzureHelperConnection.class.getClassLoader().getResourceAsStream("application.properties"));
-			URL = props.getProperty("URL");			
+			URL = props.getProperty("URL");
 			connection = DriverManager.getConnection(URL);
 		} catch (IOException e) {
 			log.log(Level.SEVERE, e.getLocalizedMessage());
@@ -31,29 +30,27 @@ public final class AzureHelperConnection {
 			log.log(Level.SEVERE, e.getLocalizedMessage());
 		}
 	}
+
+	private AzureHelperConnection() {
+	}
+
+	public synchronized Connection getConnection() {
+		return this.connection;
+	}
 	
-	private AzureHelperConnection() {}
-	
-	
-	
-	public AzureHelperConnection GetInstance() {
-		if(instance==null) {
-			instance  = new AzureHelperConnection();
+	public synchronized AzureHelperConnection GetInstance() {
+
+		synchronized (this) {
+		}
+		if (instance == null) {
+			instance = new AzureHelperConnection();
 		}
 		return instance;
 	}
-	
-	
-	
-	
-	
-	
+
 	public void close() throws SQLException {
-		if(connection!=null)
+		if (connection != null)
 			connection.close();
 	}
-	
-	
-	
-	
+
 }

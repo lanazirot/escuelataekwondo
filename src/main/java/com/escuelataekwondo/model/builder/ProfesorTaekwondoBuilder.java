@@ -1,6 +1,6 @@
 package com.escuelataekwondo.model.builder;
 
-import com.escuelataekwondo.model.people.ProfesorTaekwondo;
+import com.escuelataekwondo.model.entities.ProfesorTaekwondo;
 
 public class ProfesorTaekwondoBuilder extends PersonaTaekwondoBuilder<ProfesorTaekwondoBuilder> {
 
