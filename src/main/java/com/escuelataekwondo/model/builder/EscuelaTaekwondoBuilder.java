@@ -1,7 +1,7 @@
 package com.escuelataekwondo.model.builder;
 
 import com.escuelataekwondo.model.entities.EscuelaTaekwondo;
-import com.escuelataekwondo.model.entities.Persona;
+import com.escuelataekwondo.model.entities.base.Persona;
 
 public class EscuelaTaekwondoBuilder{
 		

@@ -1,5 +1,7 @@
 package com.escuelataekwondo.model.entities;
 
+import com.escuelataekwondo.model.entities.base.Persona;
+
 public class PersonaTaekwondo extends Persona {
 	private int id;
 	private int idGrado;

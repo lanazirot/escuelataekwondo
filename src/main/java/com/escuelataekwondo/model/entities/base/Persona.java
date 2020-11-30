@@ -1,4 +1,4 @@
-package com.escuelataekwondo.model.entities;
+package com.escuelataekwondo.model.entities.base;
 
 public abstract class Persona {
 	private String nombre;
